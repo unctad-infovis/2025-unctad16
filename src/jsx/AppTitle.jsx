@@ -8,9 +8,8 @@ function App({ first, second }) {
       <h1 className="h1-60s my-3">
         <span className="fw-normal">{first}</span>
         {' '}
-        <span className="nowrap">
+        <span className="nowrap chevron">
           {second}
-          <span className="chevron"><img src="https://static.dwcdn.net/custom/themes/unctad-2024-rebrand/Blue%20arrow.svg" alt="" aria-hidden="true" /></span>
         </span>
       </h1>
     </div>
