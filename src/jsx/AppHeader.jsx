@@ -1,18 +1,7 @@
-import React, { /* useState, */ useEffect } from 'react';
+import React, { /* useState, useEffect */ } from 'react';
 import '../styles/styles.less';
 
 function App() {
-  useEffect(() => {
-    const links = document.querySelectorAll('.unctad16--menu a');
-    links.forEach(link => {
-      if (link.textContent.trim() === 'Programme') {
-        link.addEventListener('click', (e) => {
-          e.preventDefault(); // stop normal navigation
-          window.open(link.href, '_blank'); // open in new tab
-        });
-      }
-    });
-  }, []);
   return (
     <div className="app">
       <div className="app_header">
