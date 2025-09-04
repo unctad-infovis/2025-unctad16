@@ -1,45 +1,101 @@
 @import 'colors.less';
 
 .app-root-2025-unctad16 .app {
-  .h1-60s {
-    color: #ED1847 !important;
-    font-size: 5.375rem;
-    font-weight: bolder;
-  }
-  .chevron {
-    &:after {
-      background-image: url('https://static.dwcdn.net/custom/themes/unctad-2024-rebrand/Blue%20arrow.svg');
-      background-repeat: no-repeat;
-      background-size: 100% 100%;
-      content: '';
-      display: inline-block;
-      height: 47px;
-      margin-left: 10px;
-      width: 47px;
-    }
-    img {
-      width: 100%;
-    }
-  }
-  @media screen and (max-width: 47.9375rem) {
-    .h1-60s {
-      font-size: 4rem;
+  .app_header {
+    .content-wrapper {
+      padding-bottom: 50px;
+      @media all and (max-width: 62rem) {
+        padding-bottom: 60px;
+      }
+      @media all and (max-width: 48rem) {
+        padding-bottom: 0;
+      }
+      .text-container {
+        padding-left: 15px;
+        .line-1 {
+          line-height: 1.2;
+          margin-bottom: 10px;
+        }
+      }
     }
     .chevron {
+      white-space: nowrap;
       &:after {
-        height: 35px;
-        width: 35px;
+        background-image: url('https://static.dwcdn.net/custom/themes/unctad-2024-rebrand/Blue%20arrow.svg');
+        background-repeat: no-repeat;
+        background-size: 100% 100%;
+        content: '';
+        display: inline-block;
+        height: 18px;
+        margin-left: 5px;
+        width: 18px;
+      }
+      img {
+        width: 100%;
+      }
+    }
+    @media all and (max-width: 1200px) {
+      .content-wrapper {
+        margin: auto auto;
+        max-width: 400px;
+        .logo-container {
+          text-align: center;
+        }
+        .text-container {
+          padding-left: 30px;
+        }
+      }
+    }
+    @media all and (max-width: 30rem) {
+      .content-wrapper {
+        .text-container {
+          padding-left: 20px;
+        }
       }
     }
   }
-  @media screen and (max-width: 30rem) {
+  .app_title {
     .h1-60s {
-      font-size: 3rem;
+      color: #ED1847 !important;
+      font-size: 5.375rem;
+      font-weight: bolder;
     }
     .chevron {
+      white-space: nowrap;
       &:after {
-        height: 25px;
-        width: 25px;
+        background-image: url('https://static.dwcdn.net/custom/themes/unctad-2024-rebrand/Blue%20arrow.svg');
+        background-repeat: no-repeat;
+        background-size: 100% 100%;
+        content: '';
+        display: inline-block;
+        height: 47px;
+        margin-left: 10px;
+        width: 47px;
+      }
+      img {
+        width: 100%;
+      }
+    }
+    @media all and (max-width: 48rem) {
+      .h1-60s {
+        font-size: 4rem;
+      }
+      .chevron {
+        &:after {
+          height: 35px;
+          width: 35px;
+        }
+      }
+    }
+    @media all and (max-width: 30rem) {
+      .h1-60s {
+        font-size: 3rem;
+      }
+      .chevron {
+        &:after {
+          height: 25px;
+          width: 25px;
+        }
       }
     }
   }

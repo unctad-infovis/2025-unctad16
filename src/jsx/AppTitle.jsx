@@ -5,13 +5,15 @@ import '../styles/styles.less';
 function App({ first, second }) {
   return (
     <div className="app">
-      <h1 className="h1-60s my-3">
-        <span className="fw-normal">{first}</span>
-        {' '}
-        <span className="nowrap chevron">
-          {second}
-        </span>
-      </h1>
+      <div className="app_title">
+        <h1 className="h1-60s my-3">
+          <span className="fw-normal">{first}</span>
+          {' '}
+          <span className="nowrap chevron">
+            {second}
+          </span>
+        </h1>
+      </div>
     </div>
   );
 }
